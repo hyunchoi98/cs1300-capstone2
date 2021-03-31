@@ -20,16 +20,6 @@ class SavedPage extends Component {
   }
 
   removeFromSaved = card => {
-    // let total = this.state.totalFee;
-    // let cart = this.state.cart;
-
-    // total = total - card.fee; // decrements total fee
-    // cart = cart.filter((x) => x !== card); // removes the card from the cart
-
-    // this.setState({
-    //   totalFee: total,
-    //   cart: cart,
-    // });
 
     let username = localStorage.getItem('currentUser');
     let cardid = card.id;

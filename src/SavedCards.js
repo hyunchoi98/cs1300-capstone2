@@ -44,17 +44,6 @@ class SavedCards extends Component {
 
 
   removeFromSaved = card => {
-    // let total = this.state.totalFee;
-    // let cart = this.state.cart;
-
-    // total = total - card.fee; // decrements total fee
-    // cart = cart.filter((x) => x !== card); // removes the card from the cart
-
-    // this.setState({
-    //   totalFee: total,
-    //   cart: cart,
-    // });
-
     let saved = this.state.saved;
 
     saved = saved.filter((x) => x !== card); // removes the card from the cart

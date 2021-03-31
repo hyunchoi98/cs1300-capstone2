@@ -87,23 +87,6 @@ export default class Topbar extends React.Component {
     } else if (this.state.redirectBrowse) {
       return <Redirect to="/cardsearch" />
     }
-    // } else if (this.state.redirectUser) {
-    //   if (window.location.pathname == '/user') {
-    //     window.location.reload();
-    //   };
-    //   return <Redirect to='/user' />
-    // } else if (this.state.redirectGame) {
-    //   if (window.location.pathname == '/search') {
-    //     window.location.reload();
-    //   };
-    //   return <Redirect to='/search' />
-    // } else if (this.state.redirectHost) {
-    //   if (window.location.pathname == '/hostsearch') {
-    //     window.location.reload();
-    //   };
-    //   return <Redirect to='/hostsearch' />
-    // };
-
 
     let username = localStorage.getItem('currentUser');
 

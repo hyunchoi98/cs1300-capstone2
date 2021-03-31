@@ -63,20 +63,6 @@ class Apply extends Component {
   }
   addToSaved = card => {
     console.log(card);
-    // let cart = this.state.cart;
-
-    // // Only allow one of each card to be added to the cart
-    // if (cart.filter(e => e.name === card.name).length > 0) {
-    //   window.alert("Only one of each card can be added to your cart!")
-    // } else {
-    //   cart.push(card);
-    //   let total = this.state.totalFee + card.fee;
-    //   this.setState({
-    //     totalFee: total,
-    //     cart: cart,
-    //   });
-    // }
-
     let username = localStorage.getItem('currentUser');
     let cardid = card.id;
 
@@ -107,21 +93,7 @@ class Apply extends Component {
       return <Redirect to='/'></Redirect>
     }
 
-
     let listOfCards = this.state.cart.map(this.cartList);
-
-    // // Add cart total to the beginning of the list
-    // listOfCards.unshift(
-    //   <ListItem style={{ textAlign: "left" }}>
-    //     <ListItemText variant="h" component="h2">
-    //       Total annual fees: ${this.props.totalFee}
-    //     </ListItemText>
-    //   </ListItem>
-    // );
-
-    // listOfCards.push(
-    //   <Button style={{ margin: 5, backgroundColor: "#0275d8", width: "100%" }} onClick={this.removeCard}>Apply for these cards</Button>
-    // );
 
     return (
       <div>
