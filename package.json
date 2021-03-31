@@ -1,0 +1,58 @@
+{
+  "name": "development",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.0",
+    "ant-design": "^1.0.0",
+    "antd": "^4.15.0",
+    "bootstrap": "^4.5.3",
+    "buble": "^0.20.0",
+    "craco": "^0.0.3",
+    "craco-less": "^1.17.1",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.19.2",
+    "install": "^0.13.0",
+    "jquery": "^3.6.0",
+    "mongoose": "^5.12.2",
+    "npm": "^7.7.6",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.2.3",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "craco build"
+  },
+  "engines": {
+    "node": "15.x",
+    "npm": "7.x"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8080"
+}
